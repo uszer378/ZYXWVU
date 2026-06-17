@@ -1,6 +1,21 @@
-let numbers = [1,2,3,4,5];
-numbers.forEach(display);
+class Person {
+    constructor(name, adult, age) {
+        this.name = name;
+        this.adult = adult;
+        this.age = age;
+        this.hobbies = hobbies;
+    }
 
-function display(element){
-    console.log(element)
+    set age(newAge) {
+        if (newAge < 14) {
+
+            alert(`${this.name} you can not get a job yet you have to wait until you are 14 or older`);
+        } else {
+            this._age = newAge;
+        }
+    }
+
+    get age() {
+        return this._age;
+    }
 }
