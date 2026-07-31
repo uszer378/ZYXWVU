@@ -1,6 +1,17 @@
-@font-face {
-  font-family: 'comic-sans';
-  src: url('comicsans.ttf') format('truetype'); 
-  font-weight: normal; 
-  font-style: normal;
+body{
+  text-align: center;
+}
+#input{
+  border: 50px, black;
+}
+#something{
+  background-color: rgba(255, 202, 0, 1);
+  border-radius: 30px;
+  padding:10px;
+  width: 250px;
+  display: block;
+}
+#uu{
+  display: flex;
+  justify-content: center;
 }
