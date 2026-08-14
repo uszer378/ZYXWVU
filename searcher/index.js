@@ -4,7 +4,7 @@ let auth = document.getElementById('auth')
 async function getData() {
   const input = document.getElementById('input').value.toLowerCase()
   try {
-    let response = await fetch(`https://raw.githubusercontent.com/uszer378/ZYXWVU/refs/heads/main/${input}/test.json`)
+    let response = await fetch(`https://raw.githubusercontent.com/uszer378/ZYXWVU/refs/heads/main/${input}/about.json`)
 
     if (!response.ok) {
       dis.textContent = `not seeing a thing`
@@ -12,6 +12,7 @@ async function getData() {
     }
     let son = await response.json();
     auth.textContent = son.who
+    dis.textContent = son.why
 
   } catch (error) {
     
